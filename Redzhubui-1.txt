@@ -759,7 +759,8 @@ function redzlib:MakeWindow(Configs)
 	
 	SetChildren(ButtonsFolder, {
 		CloseButton,
-		MinimizeButton
+		MinimizeButton,
+        CoolButton
 	})
 	
 	local Minimized, SaveSize, WaitClick
@@ -1886,5 +1887,6 @@ function redzlib:MakeWindow(Configs)
 	MinimizeButton.Activated:Connect(Window.MinimizeBtn)
 	return Window
 end
+
 
 return redzlib
